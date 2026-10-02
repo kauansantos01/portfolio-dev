@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kauan | Portfólio</title>
+  <meta name="description" content="Portfólio de Kauan Santos — Desenvolvedor Front-End." />
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVEGAÇÃO  -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="navbar__logo">
+        <span class="navbar__logo-mark">K</span> Kauan
+      </a>
+
+      <nav class="navbar__links" id="nav-links">
+        <a href="#inicio" class="active">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <!-- Botão do menu mobile (aparece só em telas pequenas) -->
+      <button class="navbar__toggle" id="nav-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="container hero__inner">
+      <p class="hero__eyebrow">Boas vindas ao meu portfólio</p>
+      <h1 class="hero__title">
+        Olá, eu sou <span class="hero__name" id="typing"></span>
+      </h1>
+      <h2 class="hero__subtitle">Desenvolvedor Front-End</h2>
+      <p class="hero__text">
+        Eu transformo ideias em experiências digitais modernas, com foco em
+        performance, acessibilidade e um código limpo e escalável.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#projetos" class="btn btn--primary">Ver projetos &rarr;</a>
+        <a href="#sobre" class="btn btn--ghost">Sobre mim &darr;</a>
+      </div>
+
+      <ul class="hero__skills">
+        <li><strong>HTML</strong><small>Estrutura</small></li>
+        <li><strong>CSS</strong><small>Estilo</small></li>
+        <li><strong>JavaScript</strong><small>Interatividade</small></li>
+        <li><strong>Git</strong><small>Versionamento</small></li>
+        <li><strong>React</strong><small>Aprendendo</small></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <p class="section__eyebrow">Sobre mim</p>
+      <h2 class="section__title">Quem está por trás do código</h2>
+
+      <div class="sobre">
+        <div class="sobre__text reveal">
+          <p>
+            Sou o Kauan, desenvolvedor front-end em formação. Comecei meus
+            estudos com <strong>HTML, CSS e JavaScript</strong> e desde então
+            venho construindo projetos para aprender na prática.
+          </p>
+          <p>
+            Gosto de transformar designs em páginas reais, responsivas e
+            acessíveis. No momento, estou aprofundando meus conhecimentos em
+            <strong>JavaScript</strong> e <strong>React</strong>.
+          </p>
+
+          <ul class="sobre__info">
+            <li>📍 São Paulo, Brasil</li>
+            <li>💼 Aberto a oportunidades júnior</li>
+            <li>🎓 Estudando Análise e Desenvolvimento de Sistemas</li>
+          </ul>
+        </div>
+
+        <div class="sobre__stats reveal">
+          <div class="stat">
+            <span class="stat__number">3+</span>
+            <span class="stat__label">Projetos concluídos</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">1+</span>
+            <span class="stat__label">Ano de estudo</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">∞</span>
+            <span class="stat__label">Vontade de aprender</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJETOS ===================== -->
+  <section id="projetos" class="section section--alt">
+    <div class="container">
+      <p class="section__eyebrow">Projetos</p>
+      <h2 class="section__title">Coisas que eu construí</h2>
+
+      <div class="projetos">
+
+        <article class="projeto reveal">
+          <div class="projeto__thumb projeto__thumb--1">🗂️</div>
+          <div class="projeto__body">
+            <h3>TaskFlow</h3>
+            <p>Gerenciador de tarefas com arrastar e soltar, salvo no navegador.</p>
+            <div class="projeto__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="projeto__links">
+              <a href="#" target="_blank" rel="noopener">Ver demo</a>
+              <a href="#" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="projeto reveal">
+          <div class="projeto__thumb projeto__thumb--2">🌤️</div>
+          <div class="projeto__body">
+            <h3>Clima Agora</h3>
+            <p>App de previsão do tempo que consome uma API pública real.</p>
+            <div class="projeto__tags">
+              <span>HTML</span><span>CSS</span><span>API</span>
+            </div>
+            <div class="projeto__links">
+              <a href="#" target="_blank" rel="noopener">Ver demo</a>
+              <a href="#" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="projeto reveal">
+          <div class="projeto__thumb projeto__thumb--3">🧮</div>
+          <div class="projeto__body">
+            <h3>Calculadora</h3>
+            <p>Calculadora clássica com teclado físico e histórico de contas.</p>
+            <div class="projeto__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="projeto__links">
+              <a href="#" target="_blank" rel="noopener">Ver demo</a>
+              <a href="#" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section id="contato" class="section">
+    <div class="container contato">
+      <p class="section__eyebrow">Contato</p>
+      <h2 class="section__title">Vamos conversar?</h2>
+      <p class="contato__text reveal">
+        Me chame para trocar ideia sobre projetos, vagas ou só para dar um
+        "oi". Respondido rápido! 😉
+      </p>
+
+      <div class="contato__links reveal">
+        <a href="mailto:seuemail@exemplo.com" class="btn btn--primary">✉️ seuemail@exemplo.com</a>
+        <a href="https://github.com/seuusuario" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
+        <a href="https://linkedin.com/in/seuusuario" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="ano"></span> Kauan Santos — Feito com HTML, CSS e JS puro 💙</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
